@@ -47,8 +47,8 @@ jobs:
         run: cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" . 
 
 
-      # Runs a set of commands using the runners shell
-      - name: Succeeded
+
+
 
 
         
