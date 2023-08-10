@@ -41,7 +41,7 @@ jobs:
         run: npm install
         
       - name: Create the wasm file from go
-        run: $Env:GOOS = "js"; $Env:GOARCH = "wasm"; go build -o main.wasm main.go
+        run: export GOOS = js export GOARCH = wasm go build -o main.wasm
      
       - name: Copying into folder wasm_exec javascript file
         run: cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" . 
